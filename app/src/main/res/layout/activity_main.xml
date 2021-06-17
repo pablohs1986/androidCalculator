@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3F3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textviewEntradaResultado"
+        android:layout_width="365dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="64dp"
+        android:background="#FFFFFF"
+        android:foregroundGravity="right"
+        android:gravity="right| bottom"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOperacion"
+        android:layout_width="365dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="28dp"
+        android:foregroundGravity="right"
+        android:gravity="right| bottom"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="386dp"
+        android:layout_height="471dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewEntradaResultado"
+        app:layout_constraintVertical_bias="0.682">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonLimpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:padding="10dip"
+                android:text="C"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#FFB8B6B6" />
+
+
+            <Button
+                android:id="@+id/buttonBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:padding="10dip"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#FFB8B6B6"
+                app:icon="@android:drawable/ic_input_delete"
+                app:iconGravity="textStart"
+                app:iconSize="40sp"
+                app:iconTint="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="7"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="8"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="9"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/buttonResta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:padding="5dp"
+                android:text="-"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#FFB8B6B6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="4"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="5"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="6"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/buttonSuma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:padding="5dp"
+                android:text="+"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#FFB8B6B6" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="3"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="2"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/buttonDivision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#9C27B0"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:padding="5dp"
+                android:text="/"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#FFB8B6B6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="."
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:onClick="buttonNumericoOnClick"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#DDDDDD" />
+
+            <Button
+                android:id="@+id/buttonIgual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:padding="5dp"
+                android:text="="
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                app:backgroundTint="#2196F3" />
+
+            <Button
+                android:id="@+id/buttonMultiplicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="#FF6363"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:padding="5dp"
+                android:text="*"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:backgroundTint="#B8B6B6" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
